@@ -14,5 +14,9 @@ def take_a_number(current_line, name)
   if current_line.size == 0
     current_line.push(name)
     puts "Welcome, #{name}. You are number 1 in line."
-  end
+  elsif current_line.size > 0
+    current_line.push(name)
+    puts "Welcome, #{name}. You are number #{current_line.size} in line."
+    
+end
 end
